@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alem Cafe Menu</title>
+    <link rel="stylesheet" href="alem.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .menu-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .menu-card img {
+            width: 100%;
+            height: auto;
+        }
+        .menu-details {
+            padding: 15px;
+            text-align: center;
+        }
+        .call-now {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        @media (max-width: 768px) {
+            .menu-card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .menu-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alem Cafe Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#beverages">Beverages</a></li>
+                <li><a href="#specials">Specials</a></li>
+            </ul>
+        </nav>
+        <a href="personal_portfolio.html" class="back-link">Back to Portfolio</a>
+    </header>
+
+    <main>
+        <section id="food">
+            <h2>Food</h2>
+            <div class="menu-item">
+                <div class="menu-card">
+                    <img src="C:\Users\DELL\Downloads\menu\alemphoto\Easy Club Sandwich Recipe_ Step by Step Club….jpg" alt="Club Sandwich">
+                    <div class="menu-details">
+                        <h3>Club Sandwich</h3>
+                        <p>Layers of turkey, bacon, lettuce, and tomato.</p>
+                        <p><strong>Price:</strong> 400 ETB</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="C:\Users\DELL\Downloads\menu\alemphoto\Caprese Sandwiches with Balsamic Glaze.jpg" alt="Caprese Sandwiches">
+                    <div class="menu-details">
+                        <h3>Caprese Sandwiches</h3>
+                        <p>Fresh mozzarella, basil, and tomatoes with balsamic glaze.</p>
+                        <p><strong>Price:</strong> 350 ETB</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="C:\Users\DELL\Downloads\menu\alemphoto\Ground Beef Grilled Cheese Sandwich.jpg" alt="Grilled Cheese Sandwich">
+                    <div class="menu-details">
+                        <h3>Ground Beef Grilled Cheese</h3>
+                        <p>Grilled cheese with seasoned ground beef.</p>
+                        <p><strong>Price:</strong> 450 ETB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beverages">
+            <h2>Beverages</h2>
+            <div class="menu-item">
+                <div class="menu-card">
+                    <img src="C:\Users\DELL\Downloads\menu\alemphoto\MIXED BERRY SMOOTHIE.jpg" alt="Mixed Berry Smoothie">
+                    <div class="menu-details">
+                        <h3>Mixed Berry Smoothie</h3>
+                        <p>Refreshing blend of mixed berries and yogurt.</p>
+                        <p><strong>Price:</strong> 200 ETB</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="C:\Users\DELL\Downloads\menu\alemphoto\Hot Coffee Capuccino Cup With Latte Art On Wood Table At Cafe _ Premium AI-generated image.jpg" alt="Capuccino">
+                    <div class="menu-details">
+                        <h3>Hot Cappuccino</h3>
+                        <p>Rich coffee topped with creamy froth.</p>
+                        <p><strong>Price:</strong> 150 ETB</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="C:\Users\DELL\Downloads\menu\alemphoto\Apple Iced Tea.jpg" alt="Apple Iced Tea">
+                    <div class="menu-details">
+                        <h3>Apple Iced Tea</h3>
+                        <p>Refreshing iced tea with a hint of apple.</p>
+                        <p><strong>Price:</strong> 120 ETB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specials">
+            <h2>Specials</h2>
+            <p>Check out our seasonal and limited-time offers!</p>
+        </section>
+
+        <button class="call-now" onclick="callNow()">Call Now: 0976754676</button>
+    </main>
+
+    <footer>
+        <p>Follow us on social media!</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/"><img src="C:\Users\DELL\Downloads\menu\alemphoto\401c5401-ecc1-437e-a5b1-9ad8131974f3.jpg" alt="Facebook"></a>
+            <a href="https://instagram.com/"><img src="C:\Users\DELL\Downloads\menu\alemphoto\Free Facebook.jpg" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.jpg" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script src="alem.js"></script>
+</body>
+</html>
